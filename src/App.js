@@ -1,22 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import VsjItem from './components/VsjItem';
-import Cmp from './components/Cmp';
-import HelloWorld from './components/HelloWorld';
-import Apple from './components/Apple';
-import Variable from './components/Variable';
-import Comp from './components/Comp';
+import Image from './components/Image';
+
 function App() {
   return (
     <div className="App">
-      <div className='backcolor'>
+      <div className='backcelolor'>
      <h1>Welcome to VSJ React</h1>
-	 <VsjItem></VsjItem>
-   <Cmp></Cmp>
-   <HelloWorld></HelloWorld>
-   <Apple></Apple>
-   <Variable></Variable>
-   <Comp></Comp>
+     <img src="set.png"/>
+	 <image></image>
+
    </div>
     </div>
   );
