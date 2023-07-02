@@ -1,16 +1,12 @@
 import './App.css';
-import A from './components/A';
+import School from './components/School';
  
+function App() {
+  return (
+    <div className="App">
+    <School></School>
+     
+	</div>);
+}
+export default App;
 
-function App() { 
-  return ( 
-  <div>
-    <h2>Welcome to React Technology</h2>
-    
-    <A></A>
-    <img src='set.png'/>
- </div>
-); 
-} 
- 
-export default App; 
