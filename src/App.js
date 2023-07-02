@@ -1,15 +1,16 @@
-
 import './App.css';
-import ImageProps from './components/ImageProps';
-import Gallery1 from './components/Gallery1';
-import { Profile } from './components/Profile';
+import A from './components/A';
  
 
 function App() { 
   return ( 
-<Profile/>
-
-  ); 
+  <div>
+    <h2>Welcome to React Technology</h2>
+    
+    <A></A>
+    <img src='set.png'/>
+ </div>
+); 
 } 
  
 export default App; 
