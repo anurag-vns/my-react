@@ -5,7 +5,7 @@ function School(props){
        
        school component
        <Student student1="welcome"></Student>
-       <img src="set.png"/>
+       <img src="set.png" alt="nice"/>
        
       </div>);
     
