@@ -15,7 +15,11 @@ function Hello(props){
       <input type="Number" onChange={Event=>setAdd2(Event.target.value)}/>
 <h2>{num1}</h2>
 <h2>{num2}</h2>
-<h2>{Number(num1)+Number(num2)}</h2>
+<h2>TOTAL  {Number(num1)+Number(num2)}</h2>
+<h2>SUBTRACTION{Number(num1)-Number(num2)}</h2>
+<h2>MULTIPLICATION{Number(num1)*Number(num2)}</h2>
+<h2>DIVIDE{Number(num1)/Number(num2)}</h2>
+
     </p>;
 }
 export default Hello;
