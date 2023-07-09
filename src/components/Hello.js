@@ -1,19 +1,17 @@
 import React,{useState} from "react";
-function HelloForm(props){
-    const [enteredamount, setenteredamount] = useState(0);
-    const amountchangehandler=(Event)=>
-    {
-        console.log("Amount Changed");
-        console.log(Event.target.value);
-        setenteredamount(Event.target.value);
-    };
-
-    return <form>
-        <label>Amount</label>
-        <input type="text" onChange={amountchangehandler}/>
-        <h1>{enteredamount}</h1>
-        
-    </form>
+function Hello() {
+    const [textarea, setTextarea] = useState(0);
+  
+    const handleChange = (event) => {
+      setTextarea(event.target.value)
+    }
+  
+    return (
+      <form>
+        <textarea value={textarea} onChange={handleChange} />
+      </form>
+    );
+  }
     
-}
-export default HelloForm;
+
+export default Hello;

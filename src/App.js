@@ -6,7 +6,7 @@ function App(props) {
   
   return (
     <div className="App">
-      <HelloForm></HelloForm>
+      <Hello></Hello>
      
 	</div>);
 }
