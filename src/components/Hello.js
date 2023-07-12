@@ -1,16 +1,22 @@
 import React,{useState} from "react";
 function Hello() {
-    const [textarea, setTextarea] = useState(0);
+    const [Car, setCar] = useState("Volvo");
   
     const handleChange = (event) => {
-      setTextarea(event.target.value)
+    setCar(event.target.value)
     }
   
     return (
       <form>
-        <textarea value={textarea} onChange={handleChange} />
+        
+        <select value={Car} onChange={handleChange}>
+            <option value= "Ford">Ford</option>
+            <option value= "Volvo">Volvo</option>
+            <option value="Honda city">HondaCity</option>
+            <option value="Thar">Thar</option>
+        </select>
       </form>
-    );
+    )
   }
     
 
