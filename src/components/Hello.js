@@ -4,10 +4,9 @@ function HelloMultipleObject()
 	const [
 	sumData, setSum] = useState({
 		n1:0,
-		n2:0
-
-
-	});
+		n2:0,
+    n3:0
+});
 
 const sumN1=(event)=>
 {
@@ -30,16 +29,31 @@ const sumN2=(event)=>
 
 };
 
+const sumn3=(Event)=>
+{
+  setSum(
+    {
+     ...sumData,
+     n3:Number(Event.target.value), 
+    }
+  );
+  console.log("object changed");
+
+};
+
 
 
 
 	return <form>
-	<label>N1</label>
+	<label>First Number</label>
 	<input type="text" onChange={sumN1}/>
 
-	<label>N2</label>
+	<label>Second Number</label>
 	<input type="text" onChange={sumN2}/>
-		{sumData.n1 + sumData.n2}
+
+  <label>Third Number</label>
+  <input type="text" onChange={sumn3}/>
+		{sumData.n1 + sumData.n2 + sumData.n3}
 
 	</form>
 }
