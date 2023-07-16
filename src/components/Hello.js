@@ -1,17 +1,19 @@
 import React,{useState} from "react";
-function MyColor()
+function MyName()
 {
-  const[color,setcolor]=useState("Red");
+  const[name,setName]=useState("Anurag");
+  const[job,setJob]=useState("Software Developer");
+  const[age,setAge]=useState("34");
+  const[address,setAddress]=useState("MZP");
   return(
-    <>
-    <h1>My color is {color}</h1>
-    <button type="button" onClick={()=> setcolor("bule")}>Blue</button>
-    <button type="button" onClick={()=> setcolor("Orange")}>Orange</button>
-    <button type="button" onClick={()=> setcolor("Sky Blue")}>SkyBlue</button>
-    <button type="button" onClick={()=>setcolor("Pink")}>Pink</button>
-    </>
+<>
+    <h1>My Name is {name}</h1>
+    <p>
+      Job profile is {job} age is {age} from {address}.
+    </p>
+   </>
   )
 }
-  export default MyColor;
+  export default MyName;
 
 
