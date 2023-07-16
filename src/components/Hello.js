@@ -1,23 +1,16 @@
-import React,{useState} from "react";
-function MyCar()
-{
-  const[car, setCar]= useState({brand:"BMW",Model:"Mustong", Year:"2022",color:"Red"});
+import React,{useState, useEffect} from "react";
+function Timer() {
+  const [count, setCount] = useState(0);
 
-  const updatecolor=()=>{
-    setCar(previousstate =>{
-      return{...previousstate,color:"blue"}
-    });
-  }
-  return(
-<>
-    <h1>My Car Name is {car.brand}</h1>
-    <p>
-      it is model  {car.Model} and color is {car.color} from  {car.Year}.
-    </p>
-    <button type="button" onClick={updatecolor}>Blue</button>
-   </>
-  )
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 500);
+  });
+
+  return <h1> Count Starting {count} times!</h1>;
 }
-  export default MyCar;
+
+  export default Timer;
 
 
