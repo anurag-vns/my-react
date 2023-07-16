@@ -1,19 +1,16 @@
 import React,{useState} from "react";
-function MyName()
+function MyCar()
 {
-  const[name,setName]=useState("Anurag");
-  const[job,setJob]=useState("Software Developer");
-  const[age,setAge]=useState("34");
-  const[address,setAddress]=useState("MZP");
+  const[car, setCar]= useState({brand:"BMW",Model:"Mustong", Year:"2022",color:"Red"});
   return(
 <>
-    <h1>My Name is {name}</h1>
+    <h1>My Car Name is {car.brand}</h1>
     <p>
-      Job profile is {job} age is {age} from {address}.
+      it is model  {car.Model} and color is {car.color} from  {car.Year}.
     </p>
    </>
   )
 }
-  export default MyName;
+  export default MyCar;
 
 
