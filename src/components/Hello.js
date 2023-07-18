@@ -1,13 +1,17 @@
-import React,{useState, useEffect} from "react";
+import React,{useState} from "react";
 function HelloCalculator(props) {
-  const [count, setCount] = useState(0);
-const[num1,setAdd1]=useState(0);
-const[num2,setAdd2]=useState(0);
+  const [expensesdata, setExpenses] = useState({item:'',Amount:0,tdate:''});
+
+  const itemChangeHandler=(Event)=>
+  {
+    setExpenses = (Event.target.value);
+   console.log(Event.target.value);
+  };
 
 return<form>
   <div class="form-group">
   <label for="Item">Item</label>
-  <input type="email" class="form-control" placeholder="Enter Item" id="Item"/>
+  <input type="item" class="form-control" onChange={itemChangeHandler} placeholder="Enter Item" id="Item"/>
   </div>
 
   <div class="form-group">
@@ -16,8 +20,8 @@ return<form>
   </div>
 
   <div>
-    <label for="date">Date</label>
-    <input type="date" class="form-control" placeholder="Enter Date" id ="Date"/>
+    <label for="tdate">Date</label>
+    <input type="date" class="form-control" placeholder="Enter Date" id ="tDate"/>
   </div>
 
   <div>

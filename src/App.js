@@ -1,6 +1,5 @@
 import './App.css';
 import HelloCalculator from './components/Hello';
-import Timer from './components/Hello';
 import Hello from './components/Hello';
  
 function App(props) {
