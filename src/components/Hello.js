@@ -1,60 +1,24 @@
-import React,{useState} from "react";
-function HelloCalculator() {
- 
-	const [
-	count,setCount] useState({
-		item:'',
-num1:'',
-num2:''});
-		
-		/* Use n object instead of two useState*/
-	});
-	const itemChangeHandler=(event)=>
-	{
-		setExpense( (prevState)=>{
-		return {...prevState,item:event.target.value};
-		
-	});
-	console.log(expenseData);
-	};
-	const amountChangeHandler=(event)=>
-	{
-		setExpense( (prevState)=>{
-		return {...prevState,amount:Number(event.target.value)};
-		
-	});
-	console.log(expenseData);
-	};
-	
-	const dateChangeHandler=(event)=>
-	{
-		setExpense( (prevState)=>{
-		return {
+import React,{useEffect, useState} from "react";
+function HelloCalculator(){
+	const [count, setCount]= useState(0);
+	const[calculation ,setCalculation]=useState(0);
+
+	useEffect(()=>{
+	setCalculation(()=>count*2);
+},[count]);
 
 
+return(
+	<>
+	<p>Count:{count}</p>
+	<button onClick={()=>setCount((c)=>c+1)}>+</button>
+	<p>calculation{calculation}</p>
+	</>
+);
 
 
-	return  <form onSubmit={submitHandler}>
-  <div class="form-group">
-    <label for="item">Item</label>
-    <input type="text" class="form-control" onChange={itemChangeHandler} placeholder="Enter Item" id="item"/>
-  </div>
-  <div class="form-group">
-    <label for="amount">Amount</label>
-    <input type="number" class="form-control" placeholder="Enter Amount" id="amount" onChange={amountChangeHandler}/>
-  </div>
-  <div class="form-group">
-    <label for="tdate">Date</label>
-    <input type="date" class="form-control" placeholder="Enter Date" id="tdate" onChange={dateChangeHandler}/>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>;
-  
-  
-  
 
 }
 
-  export default HelloCalculator;
 
-
+export default HelloCalculator;
