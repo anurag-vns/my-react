@@ -1,65 +1,57 @@
 import React,{useState} from "react";
 function HelloCalculator() {
  
-  const [expensesdata, setExpenses] = useState({
-    item:'',
-    Amount:0,
-    tdate:''
-  });
-
-  const itemChangeHandler=(Event)=>
-  {
-    setExpenses ( (prevState)=>{
-   return{...prevState, item:Event.target.value};
-  });
-
-  console.log(expensesdata);
-};
-
-const amountChangeHandler=(Event)=>
-{
-  setExpenses((prevState)=>{
-  return{...prevState,amount:Number(Event.target.value)};
-
-});
-console.log(expensesdata);
-};
-
-const dateChangeHandler=(Event)=>
-{
-  setExpenses( (prevState)=>{
-    return{...prevState,tdate: new Date(Event)};
-
-  });
-console.log(expensesdata);
-};
-  
-
-  
+	const [
+	count,setCount] useState({
+		item:'',
+num1:'',
+num2:''});
+		
+		/* Use n object instead of two useState*/
+	});
+	const itemChangeHandler=(event)=>
+	{
+		setExpense( (prevState)=>{
+		return {...prevState,item:event.target.value};
+		
+	});
+	console.log(expenseData);
+	};
+	const amountChangeHandler=(event)=>
+	{
+		setExpense( (prevState)=>{
+		return {...prevState,amount:Number(event.target.value)};
+		
+	});
+	console.log(expenseData);
+	};
+	
+	const dateChangeHandler=(event)=>
+	{
+		setExpense( (prevState)=>{
+		return {
 
 
-return<form>
+
+
+	return  <form onSubmit={submitHandler}>
   <div class="form-group">
-  <label for="Item">Item</label>
-  <input type="item" class="form-control" onChange={itemChangeHandler} placeholder="Enter Item" id="Item"/>
+    <label for="item">Item</label>
+    <input type="text" class="form-control" onChange={itemChangeHandler} placeholder="Enter Item" id="item"/>
   </div>
-
   <div class="form-group">
     <label for="amount">Amount</label>
-    <input type="amount" class="form-control" placeholder="Enter Amount" id="Amount" onChange={amountChangeHandler}/>
+    <input type="number" class="form-control" placeholder="Enter Amount" id="amount" onChange={amountChangeHandler}/>
   </div>
-
-  <div>
+  <div class="form-group">
     <label for="tdate">Date</label>
-    <input type="date" class="form-control" placeholder="Enter Date" id ="tdate" onChange={dateChangeHandler}/>
+    <input type="date" class="form-control" placeholder="Enter Date" id="tdate" onChange={dateChangeHandler}/>
   </div>
-
-  <div>
-    <button type="Submit" class="btn btn-primary">Submit</button>
-  </div>
-
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>;
-
+  
+  
+  
 
 }
 
