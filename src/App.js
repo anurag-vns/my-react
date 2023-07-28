@@ -1,14 +1,13 @@
 import './App.css';
-import HelloCalculator from './components/Hello';
-import Hello from './components/Hello';
+import React1 from './React Tutorial/Countable';
  
 function App(props) {
   
   return (
-    <div>
+    
       
-      <HelloCalculator></HelloCalculator>
-      </div>
+<React1></React1>
+      
   );
 }
 export default App;
