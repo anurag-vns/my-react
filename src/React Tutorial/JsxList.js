@@ -1,13 +1,24 @@
 import React from "react";
 function JsxList(){
-  const Name='Amit';
+  const Person={
+    name:'Amit',
+    theme:{
+      backgroungcolor:'black',
+      color:'pink'
+    }
+  };
+
     return(
-        <>
+        <div style={Person.theme}>
+          <h2>{Person.name} How are you</h2>
         <img src="images (1).jpg" alt="Amit" />
-        <ul>
-<h2>{Name} How are you</h2>
-        </ul>
-      </>  
+        
+<ul>
+<li>Hello Young Pepole</li>
+<li>How are you</li>
+</ul>
+        
+        </div>
     );
 
 
