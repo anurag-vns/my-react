@@ -1,13 +1,12 @@
 import './App.css';
-import React1 from './React Tutorial/Countable';
-import Gallary from './React Tutorial/Profile';
+import JsxList from './React Tutorial/JsxList';
  
 function App(props) {
   
   return (
     
       
-<Gallary></Gallary>
+<JsxList></JsxList>
       
   );
 }
