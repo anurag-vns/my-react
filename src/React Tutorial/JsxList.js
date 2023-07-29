@@ -1,12 +1,11 @@
 import React from "react";
 function JsxList(){
+  const Name='Amit';
     return(
         <>
         <img src="images (1).jpg" alt="Amit" />
         <ul>
-<li>The News Of IT Sector</li>
-<li>Learn Here Technology</li>
-<li>Enjoy Your Technology</li>
+<h2>{Name} How are you</h2>
         </ul>
       </>  
     );
