@@ -1,12 +1,23 @@
 import React from "react";
- function Avatar()
+import { GetImage } from "./GetImage";
+ function Profile()
  {
     return(
-        <img src="stud.png" alt="student" width={100} height={100}/> 
+      <div>
+        <h1>Hello Scientiest</h1>
+    <section>
+<h2> Sir Jagdish Cand Bashu</h2>
+<img src={GetImage('as')}alt="Adision" width={200} height={200}/>
+
+<ul>
+  <l1>Physics and Chemist</l1>
+    <b> Awardes</b>
+    ( Nation Level Awards)
+</ul>
+    </section>
+      </div>
+       
     );
  }
- export default function Profile(){
-    return(
-        <Avatar></Avatar>
-    )
- }
+  
+ export default  Profile;
