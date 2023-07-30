@@ -1,13 +1,13 @@
 import './App.css';
 
-import Profile from './React Tutorial/ProfieProps';
+import PackingList from './React Tutorial/PackingList';
  
 function App(props) {
   
   return (
     
       
-<Profile></Profile>
+<PackingList></PackingList>
       
   );
 }
