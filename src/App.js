@@ -1,12 +1,13 @@
 import './App.css';
-import JsxList from './React Tutorial/JsxList';
+
+import Profile from './React Tutorial/ProfieProps';
  
 function App(props) {
   
   return (
     
       
-<JsxList></JsxList>
+<Profile></Profile>
       
   );
 }
