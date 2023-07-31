@@ -1,6 +1,9 @@
 import React from "react";
 function Item({name, ispacked}){
-    return<li>{name}</li>
+    if(ispacked){
+    return<li>{name} ✔</li>
+}
+ return<li>{name} </li>
 }
 function PackingList(){
     return(
