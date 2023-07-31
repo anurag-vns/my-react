@@ -1,7 +1,7 @@
 import React from "react";
 function Item({name, ispacked}){
     if(ispacked){
-    return null;
+    return <li>{name} {ispacked && '✔'} </li>
 }
  return<li>{name} </li>
 }
