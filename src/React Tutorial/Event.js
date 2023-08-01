@@ -7,28 +7,11 @@ function Button({Click,children}){
     );
 }
 
-function PlayButton({movieName}){
-    function handlePlayClick(){
-        alert(`playing $ {movieName}!`);
-    }
-
-
-return(
-    <Button onClick={handlePlayClick}> play"{movieName}"</Button>
-);
-}
-
-
-function UploadButton(){
-    return(
-        <Button onClick={()=> alert("Uploading!")}>Upload Image</Button>
-    );
-}
 function Toolbar(){
 return(
     <div>
-  <PlayButton movieName="Hero"/>
-  <UploadButton/>       
+ <Button Click={()=>alert('Playing!')}>Play Moviee</Button> 
+<Button Click={()=> alert('Uploading')}>Upload Image</Button>
     </div>
 );
 }
