@@ -1,9 +1,17 @@
-function Button(){
-    function handleClick(){
-        alert('You Clicked me!');
-    }
+import React from "react";
+function AlertButton({message,children}){
     return(
-        <button onClick={handleClick}>Click</button>
+        <button onClick={()=> alert (message)}>{children}</button>
     );
 }
-export default Button;
+
+ function Toolbar(){
+    return(
+        <div>
+            <AlertButton message="Playing">Play Movee</AlertButton>
+            <AlertButton message="Uploading">Upload Image</AlertButton>
+        </div>
+    );
+}
+
+export default Toolbar;
