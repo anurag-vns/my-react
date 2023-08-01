@@ -1,17 +1,35 @@
 import React from "react";
-function AlertButton({message,children}){
+
+function Button({Click,children}){
     return(
-        <button onClick={()=> alert (message)}>{children}</button>
+        <button onClick={Click}>{children}</button>
+
     );
 }
 
- function Toolbar(){
-    return(
-        <div>
-            <AlertButton message="Playing">Play Movee</AlertButton>
-            <AlertButton message="Uploading">Upload Image</AlertButton>
-        </div>
-    );
+function PlayButton({movieName}){
+    function handlePlayClick(){
+        alert(`playing $ {movieName}!`);
+    }
+
+
+return(
+    <Button onClick={handlePlayClick}> play"{movieName}"</Button>
+);
 }
 
+
+function UploadButton(){
+    return(
+        <Button onClick={()=> alert("Uploading!")}>Upload Image</Button>
+    );
+}
+function Toolbar(){
+return(
+    <div>
+  <PlayButton movieName="Hero"/>
+  <UploadButton/>       
+    </div>
+);
+}
 export default Toolbar;
