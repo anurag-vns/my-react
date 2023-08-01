@@ -1,18 +1,15 @@
 import React from "react";
-
-function Button({Click,children}){
+export default function PreventEvent()
+{
     return(
-        <button onClick={Click}>{children}</button>
-
+        <form onSubmit={e=>{
+            e.preventDefault();
+            alert('Submitted Data!');
+        }}>
+<input />
+    
+        <button>send data</button>
+        </form>
     );
+    
 }
-
-function Toolbar(){
-return(
-    <div>
- <Button Click={()=>alert('Playing!')}>Play Moviee</Button> 
-<Button Click={()=> alert('Uploading')}>Upload Image</Button>
-    </div>
-);
-}
-export default Toolbar;
