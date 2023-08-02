@@ -1,9 +1,9 @@
 import './App.css';
-import  FavoriteColor from './components/State';
-function App(props) {
+import Car from './React Tutorial/StateHooks';
+function App() {
   return (
     
-<FavoriteColor></FavoriteColor>
+<Car></Car>
 
 )
 }
