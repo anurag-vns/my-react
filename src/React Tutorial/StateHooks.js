@@ -3,17 +3,19 @@ import { useState } from "react";
 
 function Car(){
 
-    const[brand, setBrand]= useState("BMW");
-    const[color, setColor]= useState("Black");
-    const [model, setModel]=useState("BM2023");
-    const[year, setYear]=useState("2023");
+    const[car, setCar]= useState({
+        brand:"BMW",
+        color:"Black",
+        model:"BM2023",
+        year:"2023"
+    });
 
 
 
 return(
     <>
-    <h1>Brand Name is  {brand}</h1>
-    <p>it  is  {color}  model  {model} from year   {year}</p>
+    <h1> My  {car.brand}</h1>
+    <p> color is {car.color} and model is {car.model} from {car.brand}</p>
 
 </>
 );
