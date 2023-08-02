@@ -1,9 +1,10 @@
 import './App.css';
-import PreventEvent from './React Tutorial/Event';
+import  FavoriteColor from './components/State';
 function App(props) {
   return (
     
-<PreventEvent></PreventEvent>
+<FavoriteColor></FavoriteColor>
+
 )
 }
 export default App;
