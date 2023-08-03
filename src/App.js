@@ -1,9 +1,9 @@
 import './App.css';
-import Car from './React Tutorial/StateHooks';
+import Timer from './React Tutorial/UseEffectHooks';
 function App() {
   return (
     
-<Car></Car>
+<Timer></Timer>
 
 )
 }
