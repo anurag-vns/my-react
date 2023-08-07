@@ -7,12 +7,12 @@ import { useState } from "react";
       <>
         <h1>{number}</h1>
         <button onClick={() => {
-          setNumber(n => n + 1);
+          setNumber(number + 4);
           setNumber(n=> n+ 1);
           setNumber(n=> n+1);
         
         
-        }}>+3</button>
+        }}>Increasing Number</button>
       </>
     )
   }
