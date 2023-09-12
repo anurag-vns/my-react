@@ -5,11 +5,21 @@ function Counting(){
   function updatecount(){
     setCount(count+2);
   };
+  
+  function subtraction(){
+    setCount(count-1);
+  }
+
+  function divide(){
+    setCount(count/2);
+  }
 
 return(
   <div>
 <p>Counting Number:{count}</p>
 <button onClick={updatecount}>Click</button>
+<button onClick={subtraction}>subtraction</button>
+<button onClick={divide}>divide</button>
 
   </div>
 
