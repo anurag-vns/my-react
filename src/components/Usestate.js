@@ -1,7 +1,12 @@
 import React,{useState, useEffect}  from "react";
 function Counting(){
     const[count, setCount] = useState(0);
-
+     
+    useEffect(()=> {
+      alert("useEffect");
+          });
+      
+    
   function updatecount(){
     setCount(count+2);
   };
@@ -20,8 +25,7 @@ return(
 <button onClick={updatecount}>Click</button>
 <button onClick={subtraction}>subtraction</button>
 <button onClick={divide}>divide</button>
-
-  </div>
+</div>
 
 );
 }
