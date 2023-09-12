@@ -1,12 +1,12 @@
 import './Form.css';
-import Counter from './components/Usestate';
+import Counting from './components/Usestate';
 
 
 function App() {
   return (
 
   
-<Counter></Counter>
+<Counting></Counting>
 
 
 );

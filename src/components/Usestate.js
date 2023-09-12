@@ -1,25 +1,18 @@
-import React,{useState} from "react";
-function Counter(){
+import React,{useState, useEffect}  from "react";
+function Counting(){
     const[count, setCount] = useState(0);
 
-    const increment=() => {
-        setCount(count+1);
-    };
+  function updatecount(){
+    setCount(count+2);
+  };
 
-    const decrement=()=> {
-        setCount(count-1);
-    };
+return(
+  <div>
+<p>Counting Number:{count}</p>
+<button onClick={updatecount}>Click</button>
 
-    return (
-        
-      <div>
-        <h1>Increment & Decrement Number</h1>
-        <p>Count: {count}</p>
-        <button onClick={increment}>Increment</button>
-        <button onClick={decrement}>Decrement</button>
-      </div>
-      
-    );
-  }
+  </div>
 
-  export default Counter;
+);
+}
+export default Counting;
