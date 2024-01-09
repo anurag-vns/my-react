@@ -1,12 +1,24 @@
-import './Form.css';
-import Counting from './components/Usestate';
+import React, { useState } from "react";
+import Header from "./Projectcontact/Header";
+import AddContact from "./Projectcontact/AddContact";
+import ContactList from "./Projectcontact/ContactList";
 
 
 function App() {
-  return (
+  const[contact, setContact]= useState([])
 
-  
-<Counting></Counting>
+  const  addContact=(data)=>{ 
+   setContact([data])
+  }
+
+
+  return (
+<div>
+<Header></Header>
+<AddContact  addContact={addContact}></AddContact>
+<ContactList></ContactList>
+</div>
+
 
 
 );
